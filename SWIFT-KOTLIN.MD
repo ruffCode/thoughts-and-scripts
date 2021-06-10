@@ -38,16 +38,17 @@ String(5)
 
 ### String interpolation
 
-Kotlin
-
-```kotlin
-val age = 20
-print("Sam is $age")
-//when using accessing a method or property of the variable ${} is required
-print("Sam is ${age.toDouble()}")
-```
-
 ```swift
 let age = 20
 print("Sam is \(age)")
+```
+
+### Extension functions
+
+```swift
+extension Int {
+    func toRgb() -> Double{
+        Double(self) / 255
+    }
+}
 ```
